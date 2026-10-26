@@ -1,2 +1,72 @@
 # Karan-ai
 My 1 st ai 
+ 
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>Karan AI - Tamil Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="logo">K</div>
+      <div class="brand">
+        <h1>Karan AI</h1>
+        <p>Tamil AI Assistant</p>
+      </div>
+      <span class="demo-badge">DEMO</span>
+    </header>
+
+    <div class="notice">
+      Demo Mode · முன்கூட்டிய பதில்கள் மட்டுமே
+    </div>
+
+    <main id="chat" class="chat" aria-live="polite">
+      <div class="message bot">
+        <div class="bubble">
+          வணக்கம்! நான் Karan AI 👋<br><br>
+          இது என்னுடைய முதல் Demo பதிப்பு.
+          என்னிடம் கேள்வி கேட்டு முயற்சி செய்!
+        </div>
+      </div>
+    </main>
+
+    <div class="suggestions">
+      <button class="suggestion" data-prompt="உன்னைப் பற்றி சொல்">
+        உன்னைப் பற்றி சொல்
+      </button>
+      <button class="suggestion" data-prompt="Python என்றால் என்ன?">
+        Python என்றால் என்ன?
+      </button>
+      <button class="suggestion" data-prompt="ஒரு ஜோக் சொல்லு">
+        ஒரு ஜோக் சொல்லு
+      </button>
+    </div>
+
+    <form id="chatForm" class="composer">
+      <textarea
+        id="userInput"
+        placeholder="இங்கே தமிழில் எழுது..."
+        rows="1"
+        aria-label="உங்கள் செய்தி"
+        maxlength="2000"
+        required
+      ></textarea>
+      <button id="sendBtn" type="submit" aria-label="அனுப்பு">
+        ➤
+      </button>
+    </form>
+
+    <footer>
+      Karan AI © 2026 · Demo Version
+      <button id="clearBtn" type="button">Chat அழி</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
